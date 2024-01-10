@@ -1,0 +1,21 @@
+Row	Description	Part	Part Lib	References	Value	Footprint	Footprint Lib	Quantity Per PCB	Build Quantity	Status	Datasheet	Sheetpath	Source BoM	Reference	Package	Manufacturer Part Number	LCSC Part Number	Supplier 1	Supplier Part Number 1	Lifecycle	Assembly	Tolerance	Power	Wire	JLCPCB Rotation Offset
+1	Colorless transparence -40℃~+85℃ 520nm~535nm Emerald 120° 110mW 0603 Light Emitting Diodes (LED) ROHS	19-217/GHC-YR1S2/3T	Library	D101	EMERALD	LED_0603_E_1608Metric	LED_SMD	1	1	 	https://jlcpcb.com/partdetail/EverlightElec-19_217_GHC_YR1S23T/C72043	/	test_project(1)		0603	19-217/GHC-YR1S2/3T	C72043			✅ Production					
+2	1x2P PH 1 2mm 2 Brass Straight,P=2mm Wire To Board / Wire To Wire Connector ROHS	B2B-PH-K-S(LF)(SN)	Library	J101	2P-2MM-VERT	JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical	Connector_JST	1	1	 	https://jlcpcb.com/partdetail/Jst_SalesAmerica-B2B_PH_K_S_LF_SN/C131337	/	test_project(1)		Straight,P=2mm	B2B-PH-K-S(LF)(SN)	C131337			✅ Production				AWG24-100V-2A	180
+3	62.5mW Thin Film Resistor ±25ppm/℃ ±0.1% 10kΩ 0402 Chip Resistor - Surface Mount ROHS	RT0402BRD0710KL	Library	R101	10k 0.1% 62.5mW	R_0402_1005Metric	Resistor_SMD	1	1	 	https://jlcpcb.com/partdetail/Yageo-RT0402BRD0710KL/C190095	/	test_project(1)		0402	RT0402BRD0710KL	C190095			🔵 Prototype		0.1%	62.5mW		
+
+
+
+
+
+Project info:
+Schematic:	test_project
+Variant:	default
+Revision:	
+Date:	2024-01-10_16-35-41
+KiCad Version:	7.0.9-7.0.9~ubuntu23.04.1
+Statistics:
+Component Groups:	3
+Component Count:	3 (2 SMD/ 1 THT)
+Fitted Components:	3 (2 SMD/ 1 THT)
+Number of PCBs:	1
+Total Components:	3
