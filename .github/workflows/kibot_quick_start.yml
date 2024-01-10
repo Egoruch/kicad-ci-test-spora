@@ -28,6 +28,11 @@ jobs:
         # So we can run a diff between last 2 changes
         fetch-depth: '0'
 
+    - name: Check library path
+      run: |
+        cd /usr/share/kicad
+        ls
+
     - name: Quick Start
       run: |
         kibot --quick-start
@@ -38,13 +43,16 @@ jobs:
         name: Automatic_outputs
         path: Generated
 
+  # This step is to upload the results to another repo (web pages)
+  deploy:
+    runs-on: ubuntu-latest
+    needs: quick
+
+    steps:
+    - uses: actions/checkout@v3
+
     - name: Retrieve results
       uses: actions/download-artifact@v2
       with:
         name: Automatic_outputs
         path: Generated
-
-      - name: Commit and Push Modifications (After Script)
-        uses: actions-js/push@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
