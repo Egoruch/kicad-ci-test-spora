@@ -30,8 +30,9 @@ jobs:
 
     - name: Check library path
       run: |
-        cd /usr/share/kicad
+        cd /usr/share/kicad/footprints/Capacitor_SMD.pretty
         ls
+        rm -f C_0201_0603Metric.kicad_mod
 
     - name: Quick Start
       run: |
@@ -42,6 +43,12 @@ jobs:
       with:
         name: Automatic_outputs
         path: Generated
+
+    - name: Check Generated Files
+      run: |
+        ls
+        cd Generated
+        ls
 
   # This step is to upload the results to another repo (web pages)
   deploy:
