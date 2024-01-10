@@ -33,6 +33,7 @@ jobs:
         cd /usr/share/kicad/footprints/Capacitor_SMD.pretty
         ls
         rm -f C_0201_0603Metric.kicad_mod
+        ls
 
     - name: Quick Start
       run: |
@@ -49,6 +50,11 @@ jobs:
         ls
         cd Generated
         ls
+
+      - name: Commit and Push Modifications (After Generating)
+        uses: actions-js/push@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
 
   # This step is to upload the results to another repo (web pages)
   deploy:
