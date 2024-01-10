@@ -51,10 +51,10 @@ jobs:
         cd Generated
         ls
 
-      - name: Commit and Push Modifications (After Generating)
-        uses: actions-js/push@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+    - name: Commit and Push Modifications (After Generating)
+      uses: actions-js/push@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
 
   # This step is to upload the results to another repo (web pages)
   deploy:
